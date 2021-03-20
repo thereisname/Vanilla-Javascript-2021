@@ -7,26 +7,48 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div class="js-clock">
-      <h1>00:00</h1>
-    </div>
-    <form class="js-form form">
-      <input type="text" placeholder="What is your name?" />
-    </form>
-    <h4 class="js-greetings greetings"></h4>
+    <main>
+      <div class="todo show"">
+        <span class="bars"><i class="fas fa-bars fa-2x"></i></span>
+        <div class="todo__status-bar">
+          <span class="todo__status-bar__title">TASKS</span>
+          <button><i class="fas fa-angle-left fa-2x"></i></button>
+        </div>
+        
+        <form class="js-toDoForm toDoForm">
+          <input type="text" placeholder="Write a to do" />
+        </form>
+        <ul class="js-toDoList">
 
-    
-    <form class="js-toDoForm">
-      <input type="text" placeholder="Write a to do" />
-    </form>
-    <ul class="js-toDoList">
+        </ul>
+      </div>
 
-    </ul>
-  <span class="js-weather"></span>
+      <div class="clockAndName">
+          <div class="js-clock clock">
+          <h1>00:00</h1>
+        </div>
+
+        <form class="js-form form">
+          <input type="text" placeholder="What is your name?" />
+        </form>
+        <h4 class="js-greetings greetings"></h4>
+      </div>
+      
+
+      
+      <!-- <span class="js-weather"></span> -->
+    </main>
+  
+    <script src="js/todoShow.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/gretting.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/bg.js"></script>
     <script src="js/weather.js"></script>
+    <script 
+        src="https://kit.fontawesome.com/6478f529f2.js"
+        crossorigin="anonymous"
+    >
+    </script>
   </body>
 </html>
