@@ -1,23 +1,14 @@
+@import "weather.css";
+@import "todo.css";
+@import "clock.css";
+@import "gretting.css";
+@import "bg.css";
+
 body {
   color: #fff;
-  /* #34495e; */
   transition: color 0.5s ease-in-out;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0px;
-}
-
-.bars {
-  display: none;
-  position: fixed;
-  top: 10px;
-  left: 10px;
-}
-.bars:hover {
-  cursor: pointer;
-}
-
-.btn {
-  cursor: pointer;
 }
 
 main {
@@ -26,116 +17,3 @@ main {
   align-items: center;
   justify-content: center;
 }
-
-
-
-.todo {
-  height: 100vh;
-  width: 25%;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: none;
-}
-.show {
-  display: block;
-}
-.todo__status-bar {
-  display: flex;
-  justify-content: space-between;
-  margin: 20px 15px;
-  align-items: center;
-}
-.todo__status-bar__title {
-  font-size: 30px;
-}
-.todo__status-bar button {
-  background-color: rgba(0, 0, 0, 0);
-  outline: none;
-  border: none;
-}
-.todo__status-bar button:hover {
-  cursor: pointer;
-}
-.toDoForm {
-  width: 100%;
-  text-align: center;
-}
-.toDoForm input {
-  box-sizing: border-box;
-  width: 90%;
-  height: 35px;
-  border-radius: 20px;
-  padding: 0px 10px;
-}
-
-
-
-
-.clockAndName {
-  width: 75%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.clock h1 {
-  font-size: 100px;
-  margin: 0px;
-  margin-bottom: 10px;
-  font-weight: 700;
-}
-
-
-
-
-.clicked {
-  color: #7f8c8d;
-}
-.form, 
-.greetings {
-  display: none;
-}
-.form input{
-  padding: 0px 15px;
-  border: none;
-  box-sizing: border-box;
-  border-radius: 20px;
-  outline: none;
-  height: 100%;
-  width: 60%;
-}
-.greetings {
-  font-size: 50px;
-  font-weight: 500;
-  margin: 0px;
-}
-.showing {
-  display: block;
-  text-align: center;
-  height: 30px;
-  width: 100%;
-}
-
-
-
-
-
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.bgImage{
-  position: absolute;
-  top: 0px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  animation: fadeIn 0.5s linear;
-}
-

@@ -1,0 +1,34 @@
+@keyframes appearAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+.weather {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    padding: 10px 20px 20px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    text-align: center;
+    transform: translateX(500px);  
+    animation: appearAnimation 0.5s ease-in-out forwards;
+    display: none;
+}
+
+.imgWwather {
+    width: 70px;
+    height: 70px;
+}
+
+.infoWeather {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 5px;
+    margin-bottom: 5px;
+}

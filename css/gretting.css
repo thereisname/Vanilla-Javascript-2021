@@ -1,0 +1,31 @@
+.clicked {
+    color: #7f8c8d;
+}
+
+.form, 
+.greetings {
+    display: none;
+}
+
+.form input{
+    padding: 0px 15px;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 20px;
+    outline: none;
+    height: 100%;
+    width: 60%;
+}
+
+.greetings {
+    font-size: 50px;
+    font-weight: 500;
+    margin: 0px;
+}
+
+.showing {
+    display: block;
+    text-align: center;
+    height: 30px;
+    width: 100%;
+}
