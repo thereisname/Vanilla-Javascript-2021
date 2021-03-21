@@ -83,8 +83,10 @@ function buildGenericLi(task) {
   const li = document.createElement("li");
   const span = document.createElement("span");
   const deleteBtn = document.createElement("button");
+  li.setAttribute("class", "todo-margin");
   deleteBtn.setAttribute("class", "btnTodo");
   span.innerText = task.text;
+  span.style.wordBreak = "break-word";
   deleteBtn.innerText = "❌";
   deleteBtn.addEventListener("click", deleteTask);
   li.append(span, deleteBtn);
@@ -133,7 +135,6 @@ function restoreState() {
 
 function handleFormSubmit(e) {
   e.preventDefault();
-  console.log(inputTodo.value);
   const taskObj = getTaskObject(inputTodo.value);
   inputTodo.value = "";
   paintPendingTask(taskObj);

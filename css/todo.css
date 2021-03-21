@@ -78,4 +78,19 @@
 .pending,
 .finished {
     padding-left: 35px;
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 200px;
+}
+.pending::-webkit-scrollbar,
+.finished::-webkit-scrollbar {
+    display: none !important;
+}
+
+.todo-margin {
+    margin-bottom: 20px;
+}
+
+.toDo__title h3{
+    text-shadow: rgb(255, 196, 0) 3px 0 5px;
 }
